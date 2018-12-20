@@ -1,0 +1,528 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ------------ Begin CSS ------------ */
+
+
+body {
+  font-family: 'Comfortaa';
+	}
+
+  /* navigation*/
+  .header {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url(https://www.scalevp.com/sites/default/files/designbig.jpg);
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header h1 {
+      font-size: 25px;
+      color: white;
+      display:block;
+      float: left;
+      margin: 0 35px 0 35px;
+      padding: 2% 0 0 25px;
+    }
+    .header h1 a {
+        text-decoration: none;
+        color: white;
+      }
+    .header h1 a:hover {
+        color: lightblue;
+      }
+
+
+/* All content*/
+.column {
+    float: left;
+    padding: 50px;
+}
+
+	/* Graphical page-specific content*/
+	.column.mast {
+	  color: white;
+	  width: 80%;
+	  float: right;
+	  margin: 8.75% 5% 0 1%;
+	}
+	.column.mast p{
+	  font-size: 40px;
+		margin-bottom: 20px;
+	}
+	.column.mast span{
+	  margin-left: 15%;
+	  color: white;
+	  font-family: 'Comfortaa';
+	  font-size: 1.5vw;
+	  padding: 0;
+	  }
+	.column.mast span a{
+	  color: #2f4555;
+	  font-size: 1vw;
+	  margin-left: 15%;
+	  }
+	.column.mast span a:hover{
+	    color: lightblue;
+	  }
+	  /* Mast header*/
+	  h2{
+	    font-size: 60px;
+	    text-align: left;
+	    margin: -5px 0 7% 0;
+	  }
+
+		.contact-mast{
+		margin-left: 10%;
+		font-size: 60px;
+		}
+		.column.mast p.contact-mast-p{
+		margin-left: 10%;
+		font-size: 55px;
+		}
+
+		.mood-mast{
+		margin-left: 10%;
+		font-size: 60px;
+		}
+		.column.mast p.mood-mast-p{
+		margin-left: 10%;
+		font-size: 55px;
+		}
+
+
+		.column.mast p.great-p{
+			margin-left: 30%;
+			font-size: 35px;
+		}
+
+		.login-head{
+			margin-left: 10%;
+			font-size: 60px;
+		}
+		.column.mast p.login-p{
+			margin-left: 10%;
+			font-size: 60px;
+		}
+
+		.logout-head{
+			margin-left: 10%;
+			font-size: 60px;
+		}
+		.column.mast p.logout-p{
+			margin-left: 10%;
+			font-size: 60px;
+		}
+
+
+	/* Section with the lists or task-specific content*/
+	.column.middle {
+	  width: 80%;
+	  float: right;
+	}
+
+	/* Quote */
+	.column.twoleft {
+	    width: 50%;
+	    padding: 2% 0 2% 2%;
+	}
+	.column.twoleft p{
+	    margin-bottom: 5%;
+	    font-size: 25px;
+	    padding: 2% 0 0 2%;
+			color: black;
+	}
+	h4 {
+	  padding: 2px;
+	  font-size: 35px;
+	  color: black;
+	}
+
+	/* Image */
+	.column.tworight {
+	    width: 35%;
+	    padding: 2% 0 0 2%;
+	}
+
+	/* Section with the lists or task-specific content*/
+	.column.lower {
+	  padding: 0 0 0 5%;
+	  width: 80%;
+	  text-align: left;
+	}
+	.column.lower p{
+	  margin: 3% 0 2% 0;
+	}
+	.column.lower a{
+	  margin-left: 100px;
+	  font-size: 40px;
+	  color:black;
+		opacity: 0.5;
+	  text-decoration: none;
+	}
+	.column.lower a:hover{
+	  opacity: 1;
+	}
+	.column.lower li{
+	  margin-bottom: 10px;
+	  padding-bottom: 10px;
+	  text-align: left;
+		color: black;
+	}
+	h3 {
+	  font-size: 40px;
+	  margin-bottom: 5%;
+		color: black;
+		line-height: 45px;
+	}
+
+	.mood-head{
+		font-size: 60px;
+	}
+	.column.lower p.mood-p{
+		font-size: 40px;
+	}
+
+
+	.bad-head{
+		font-size:60px;
+		line-height: 70px;
+	}
+	.column.lower p ol.bad-list{
+		color: black;
+	}
+	.column.lower p ol.bad-list li{
+		color: black;
+	}
+	.column.lower a.bad-more{
+	  font-size: 35px;
+	}
+
+
+	/* Entire white section */
+	.rightcolumn {
+	    width: 100%;
+	    padding-left: 0px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	}
+
+
+/* Footer */
+.footer {
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  background: #74919B;
+  margin-top: 20px;
+  height: 50px;
+}
+.footer p{
+  margin-top: 1%;
+}
+.footer a{
+  color: white;
+}
+.footer a:hover{
+  color: lightblue;
+}
+
+
+
+fieldset{
+  color: black;
+}
+fieldset legend{
+  margin-bottom: 30px;
+}
+form{
+  text-align: center;
+  color: black;
+  border-color: black;
+  font-family: 'Comfortaa';
+  font-size: 40px;
+}
+.submit{
+	margin-top: 20px;
+  padding: 5px;
+  font-size: 35px;
+  border: 1px solid white;
+  border-radius: 10%;
+  color: white;
+  background-color: salmon;
+}
+form .submit:hover{
+  border: 1px solid lightblue;
+  box-shadow:
+    0 0 60px 10px #fff,
+    0 0 100px 10px #74919B,
+    0 0 140px 10px #0ff;
+}
+
+
+}
+/* Tablet */
+@media screen and (max-width: 800px) {
+
+	.mobile{
+		display: none;
+	}
+	.desktop{
+		display: none;
+	}
+	.tablet{
+		display: block;
+	}
+}
+/* Mobile */
+@media screen and (max-width: 800px) {
+
+	body {
+	  margin-left: -5%;
+		}
+
+	/* Graphical page-specific content*/
+	.column.mast {
+		text-align: center;
+		font-size: 10px;
+	}
+	.column.mast p{
+		text-align: center;
+	  font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+
+	.column.mast span{
+		text-align: center;
+	  }
+	.column.mast span a{
+		text-align: center;
+	  color: #2f4555;
+	  font-size: 1vw;
+	  }
+
+	  /* Mast header*/
+	  h2{
+	    font-size: 45px;
+			margin-bottom: 50px;
+	    text-align: center;
+	  }
+
+		.contact-mast{
+			text-align: center;
+			margin-left: 10%;
+			font-size: 75px;
+		}
+		.column.mast p.contact-mast-p{
+			margin-left: 10%;
+			font-size: 35px;
+		}
+
+		.mood-mast{
+			text-align: center;
+			margin-left: 10%;
+			font-size: 55px;
+		}
+		.column.mast p.mood-mast-p{
+			margin-left: 10%;
+			font-size: 25px;
+		}
+
+		.good-head{
+			font-size: 35px;
+		}
+
+		.column.mast p.great-p{
+			font-size: 35px;
+			margin-left: -50px;
+			margin-top: 140px;
+		}
+		.yass{
+			margin-left: -50px;
+			margin-top: 50px;
+		}
+
+
+		.login{
+			font-size: 5px;
+			margin-left: -15px;
+		}
+		.column.mast p.login-p{
+			font-size: 40px;
+			margin-bottom: 50px;
+		}
+		.column.mast span.login-span{
+			font-size: 30px;
+		}
+		.column.mast span.login-span a{
+			font-size: 20px;
+		}
+
+		.logout-head{
+			margin-left: -70px;
+			font-size: 60px;
+		}
+
+
+
+
+	/* Section with the lists or task-specific content*/
+	.column.lower {
+		width: 100%;
+	  text-align: center;
+		margin-bottom: 60px;
+	}
+	.column.lower p{
+		margin-top: 20px;
+	}
+	.column.lower a{
+		margin-left: -20px;
+	  font-size: 20px;
+	  color:black;
+	  text-decoration: none;
+		opacity: 0.5;
+	}
+	.column.lower:hover{
+		color: black;
+		opacity: 1;
+	}
+	.column.lower li{
+	  margin-bottom: 10px;
+	  padding-bottom: 10px;
+	  text-align: left;
+	}
+	h3 {
+	  font-size: 20px;
+	  text-align: center;
+		color: black;
+		line-height: 45px;
+	}
+
+
+	.mood-head{
+		font-size: 50px;
+		line-height: 50px;
+	}
+	.column.lower p.mood-p{
+		font-size: 40px;
+	}
+
+
+	.bad-head{
+		text-align: center;
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.column.lower p ol.bad-list{
+		color: black;
+	}
+	.column.lower p ol.bad-list li{
+		text-align: center;
+	}
+	.column.lower a.bad-more{
+		text-align: center;
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.column.lower a.theresmore{
+		text-align: center;
+		font-size: 50px;
+		margin-left:-90px;
+	}
+
+	.column.lower p.logout-link{
+
+	}
+	.column.lower p.logout-link a{
+				font-size: 45px;
+	}
+
+
+	/* Image */
+	.column.tworight {
+		display: none;
+	}
+	/* Quote */
+	.column.twoleft {
+			background-color: lightblue;
+			background-size: cover;
+	    width: 100%;
+	    padding: 2%
+	}
+	.column.twoleft p{
+	    margin-bottom: 4%;
+	    font-size: 12px;
+	    padding: 2%;
+	}
+	h4 {
+	  font-size: 26px;
+	}
+
+form{
+	margin-left: -65px;
+}
+
+
+.footer{
+	margin-top: -5px;
+	margin-left: 15px;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+}

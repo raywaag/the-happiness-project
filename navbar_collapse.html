@@ -1,0 +1,128 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar">
+
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
+
+      <a href="proj3_home.php" class="logo">The Happiness Project</a>
+      <ul class="main-nav" id="js-menu">
+          <li><a href="proj3_about.php" class="nav-links">About</a></li>
+          <li><a href="proj3_mood.php" class="nav-links">Today's Mood</a></li>
+          <li><a href="blogform.php" class="nav-links">Say Something</a></li>
+          <li><a href="proj3_contactform.php" class="nav-links">Contact</a></li>
+          <li><a href="proj3_login.php" class="nav-links">Log In</a></li>
+      </ul>
+  </nav>
+
+
+  <script>
+      let mainNav = document.getElementById('js-menu');
+      let navBarToggle = document.getElementById('js-navbar-toggle');
+
+      navBarToggle.addEventListener('click', function () {
+
+          mainNav.classList.toggle('active');
+      });
+  </script>
+
+
+</body>
+</html>
+
+<style>
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Comfortaa';
+}
+.navbar {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: white;
+}
+.nav-links{
+  font-size: 18px;
+  margin-right: 60px;
+}
+.nav-links:hover{
+  opacity: 0.5;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+.logo {
+    display: inline-block;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+
+@media screen and (min-width: 950px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 1vw;
+    }
+    .logo {
+        margin-top: 0;
+        font-size: 20px;
+    }
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+        opacity: 0.5;
+    }
+</style>
