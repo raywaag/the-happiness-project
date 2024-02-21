@@ -52,7 +52,7 @@
    <div class="column twoleft">
      <p>Quote of the moment:</p>
      <center><h4>"What you allow</br>
-       will conintue."</h4></center>
+       will continue."</h4></center>
    </div>
    <div class="column tworight">
      <center><img src="https://media0.giphy.com/media/krP2NRkLqnKEg/giphy.gif"alt="breathe in, breathe out" width="auto" height="auto"></center>
